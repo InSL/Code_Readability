@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Code Readability Action Set"
+            visible="true"
+            id="Code_Readability.actionSet">
+         <menu
+               label="Code &amp;Readability"
+               id="codeReadabilityMenu">
+            <separator
+                  name="codeReadabilityGroup">
+            </separator>
+         </menu>
+         <action
+               label="&amp;Start Demo"
+               icon="icons/sample.gif"
+               class="com.insl.readability.StartDemoAction"
+               tooltip="Code Readability Demo"
+               menubarPath="codeReadabilityMenu/codeReadability"
+               toolbarPath="codeReadability"
+               id="code_readability.actions.StartDemoAction">
+         </action>
+      </actionSet>
+   </extension>
+
+</plugin>
