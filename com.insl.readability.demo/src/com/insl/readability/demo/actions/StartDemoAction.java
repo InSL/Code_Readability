@@ -1,9 +1,11 @@
-package com.insl.readability;
+package com.insl.readability.demo.actions;
 
 import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.IWorkbenchWindowActionDelegate;
+
+import com.insl.readability.demo.CodeReadabilityDemo;
 
 /**
  * Our sample action implements workbench action delegate. The action proxy will
@@ -14,6 +16,7 @@ import org.eclipse.ui.IWorkbenchWindowActionDelegate;
  * @see IWorkbenchWindowActionDelegate
  */
 public class StartDemoAction implements IWorkbenchWindowActionDelegate {
+
 	/**
 	 * The constructor.
 	 */
@@ -26,6 +29,7 @@ public class StartDemoAction implements IWorkbenchWindowActionDelegate {
 	 * 
 	 * @see IWorkbenchWindowActionDelegate#run
 	 */
+	@Override
 	public void run(IAction action) {
 		javax.swing.SwingUtilities.invokeLater(new Runnable() {
 			@Override
@@ -42,6 +46,7 @@ public class StartDemoAction implements IWorkbenchWindowActionDelegate {
 	 * 
 	 * @see IWorkbenchWindowActionDelegate#selectionChanged
 	 */
+	@Override
 	public void selectionChanged(IAction action, ISelection selection) {
 	}
 
@@ -51,6 +56,7 @@ public class StartDemoAction implements IWorkbenchWindowActionDelegate {
 	 * 
 	 * @see IWorkbenchWindowActionDelegate#dispose
 	 */
+	@Override
 	public void dispose() {
 	}
 
@@ -60,6 +66,7 @@ public class StartDemoAction implements IWorkbenchWindowActionDelegate {
 	 * 
 	 * @see IWorkbenchWindowActionDelegate#init
 	 */
+	@Override
 	public void init(IWorkbenchWindow window) {
 	}
 }

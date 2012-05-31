@@ -1,4 +1,4 @@
-package com.insl.readability;
+package com.insl.readability.demo;
 
 import static org.eclipse.jdt.core.compiler.ITerminalSymbols.TokenNameAT;
 import static org.eclipse.jdt.core.compiler.ITerminalSymbols.TokenNameCOMMENT_BLOCK;
@@ -22,6 +22,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.KeyStroke;
 
+import com.insl.readability.CodeFormatter;
 import com.insl.readability.formatter.token.AppendWhitespaceFormatter;
 import com.insl.readability.formatter.token.DefaultFormatter;
 import com.insl.readability.formatter.token.NullFormatter;

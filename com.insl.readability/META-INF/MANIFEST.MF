@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Code_Readability
-Bundle-SymbolicName: Code_Readability; singleton:=true
+Bundle-Name: Code Readability
+Bundle-SymbolicName: com.insl.readability;singleton:=true
 Bundle-Version: 0.0.1
 Bundle-Activator: com.insl.readability.Activator
 Require-Bundle: org.eclipse.ui,
@@ -15,3 +15,4 @@ Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: com.insl.readability,
  com.insl.readability.formatter.token
+Bundle-Vendor: InSL
