@@ -6,11 +6,12 @@ Bundle-Version: 0.0.1
 Bundle-Activator: com.insl.readability.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
+ org.hamcrest;bundle-version="1.3.0",
  org.junit4;bundle-version="4.8.1",
  org.eclipse.jdt.core;bundle-version="3.7.1",
- org.eclipse.core.resources;bundle-version="3.7.100"
+ org.eclipse.core.resources;bundle-version="3.7.100",
+ org.mockito;bundle-version="1.9.0"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: .,
- lib/hamcrest-all-SNAPSHOT.jar,
- lib/mockito/mockito-all-1.9.0.jar
+Export-Package: com.insl.readability,
+ com.insl.readability.formatter.token
